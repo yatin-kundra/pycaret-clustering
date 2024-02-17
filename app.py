@@ -105,16 +105,7 @@ def main():
     # File uploader widget to upload CSV file
     uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
     #
-    # if uploaded_file is not None:
-    #     # Process the uploaded CSV file
-    #     df = pd.read_csv(uploaded_file)
-    #     mod1_df = []
-    #     df_kmean_1, df_kmean_norm, df_kmean_trans, df_kmean_pca, df_kmean_NT, df_kmean_all = selecting_mondel('kmeans', df)
-    #     mod1_df = merge(mod1_df, df_kmean_1, df_kmean_norm, df_kmean_trans, df_kmean_pca, df_kmean_NT, df_kmean_all)
-    #
-    #     # Display the DataFrame
-    #     st.subheader("comparison DataFrame:")
-    #     st.write(mod1_df)
+  
 
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
